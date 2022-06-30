@@ -19,6 +19,6 @@ This project is for [**OPTiM TECH BLOG**](https://tech-blog.optim.co.jp/).
    ```
 4. Open [localhost:8501](localhost:8501) in browser
 
-## LICENCE
+## LICENSE
 
-[MIT Licesne](./LICENSE)
+[MIT License](./LICENSE)
