@@ -1,0 +1,2 @@
+streamlit==1.10.0
+git+https://github.com/rinnakk/japanese-clip.git

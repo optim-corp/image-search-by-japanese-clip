@@ -1,0 +1,12 @@
+**/.git/
+**/.git*
+
+*.egg-info
+
+.dockerignore
+Dockerfile*
+
+__pycache__/
+!*.py
+
+outputs/
