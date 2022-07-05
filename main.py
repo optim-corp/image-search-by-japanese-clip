@@ -5,12 +5,17 @@ from clip import load_models, text2vectors
 from search import load_image_list, load_index, search
 
 
+@st.cache(allow_output_mutation=True)
+def load_params(image_list_path, index_path):
+    models = load_models()
+    image_list = load_image_list(image_list_path)
+    index = load_index(index_path)
+    return (models, image_list, index)
+
+
 def main():
     st.set_page_config(layout="wide")
-    with st.spinner('Loading...'):
-        models = load_models()
-        image_list = load_image_list('output/image_list.txt')
-        index = load_index('output/index.faiss')
+    models, image_list, index = load_params('output/image_list.txt', 'output/index.faiss')
 
     st.title('Image search by Japanese-CLIP')
 
